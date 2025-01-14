@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+
+@font-face{
+	font-family: Roboto;
+	src: URL(../public/Roboto-Regular.ttf);
+}
+
+#Heading{
+	font-family: Roboto;
+	font-size: 80px;
+	color: rgb(255, 0, 166);
+}
