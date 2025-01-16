@@ -2,6 +2,7 @@
   "name": "mywebsite",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://veronicakoval.github.io/mywebsite/#",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +12,8 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

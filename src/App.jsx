@@ -1,24 +1,29 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg'; // If not used, remove this line
-import viteLogo from '/vite.svg'; // If not used, remove this line
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
 import './App.css';
+import React from "react";
+import NYC from "./pages/NYC";
+import Ireland from "./pages/ireland";
+import AboutMe from "./pages/aboutme";
+import Navbar from "./components/navbar";
+import { Routes, Route, HashRouter } from "react-router-dom";
+import "./styles.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h1 id="Heading">How h1 Looks Like</h1>
-      <p id="Paragraph">
-        This is a paragraph. You can type stuff you want to see here.
-      </p>
-      <p id="Next">This is used for another paragraph.</p>
+    <HashRouter>
       <div>
-        <button onClick={() => setCount(count + 1)}>Count is {count}</button>
+        <Navbar />
+        <Routes>
+          <Route path="/NYC" element={<NYC />} />
+          <Route path="/NYC" element={<NYC />} />
+          <Route path="/Ireland" element={<Ireland />} />
+          <Route path="/AboutMe" element={<AboutMe />} />
+        </Routes>
       </div>
-    </>
+    </HashRouter>
   );
 }
 
-export default App;
-
+export default Ap
