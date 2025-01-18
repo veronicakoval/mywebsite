@@ -13,10 +13,9 @@ import "./styles.css";
 function App() {
   return (
     <HashRouter>
+      <Navbar></Navbar>
       <div>
-        <Navbar />
         <Routes>
-          <Route path="/NYC" element={<NYC />} />
           <Route path="/NYC" element={<NYC />} />
           <Route path="/Ireland" element={<Ireland />} />
           <Route path="/AboutMe" element={<AboutMe />} />
@@ -26,4 +25,4 @@ function App() {
   );
 }
 
-export default Ap
+export default App;

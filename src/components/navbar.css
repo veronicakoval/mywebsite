@@ -1,34 +1,43 @@
-/* We can design the ids or classes for the navbar here */
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-  }
-  
-  #name {
-    margin-left: 30px;
-    font-size: 40px;
-  }
-  
-  #navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 30px;
-  }
-  
-  #navbar li {
-    list-style: none;
-    padding: 0 15px;
-    position: relative;
-  }
-  
-  #navbar li a {
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: black;
-  }
+#root{
+  width: 100%;
+}
+.navbar {
+  background: darkmagenta;
+  font-family: 'Noto Serif', serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+}
+
+.navbar-title {
+  color: white;
+  margin: 0;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link.active-link {
+  text-decoration: underline;
+}
